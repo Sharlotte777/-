@@ -16,6 +16,6 @@ public class IncreaseSize : MonoBehaviour
 
     private void Update()
     {
-        transform.localScale = Vector3.one * (_originalScale + _maxScaleOffset * _speed * Time.deltaTime);
+        transform.localScale = Vector3.one * (_originalScale + _maxScaleOffset * _speed * Time.time);
     }
 }
